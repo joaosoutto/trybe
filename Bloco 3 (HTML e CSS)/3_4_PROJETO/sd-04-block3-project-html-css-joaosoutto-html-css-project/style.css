@@ -1,0 +1,166 @@
+body {
+  background-color: rgb(238 , 149 , 125);
+  font-family: 'Parisienne' , sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+#cabecalho {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.in-navigation {
+  font-family: sans-serif, cursive;
+  font-style: italic;
+  color: white;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#header {
+  background-color: rgb(145 , 23 , 31);
+  border-radius: 50px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  max-width: 95%;
+}
+
+#foto-principal {
+  margin: 10px 10px 10px 40px;
+  border-radius: 70%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  float: left;
+}
+
+#foto-secundaria {
+  margin: 10px 10px 10px 5px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  float: left;
+}
+
+#titulo-principal {
+  font-size: 45px;
+  text-decoration: underline;
+}
+
+#disco {
+  margin-left: 40px;
+  max-width: 60%;
+  background-color: rgb(185 , 107 , 112);
+  border-radius: 50px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 13px;
+}
+
+#top-discos {
+  margin-left: 40px;
+  max-width: 60%;
+  background-color: rgb(185 , 107 , 112);
+  border-radius: 50px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+}
+
+#section1 {
+  margin-left: 50px;
+  margin-right: 25px;
+  font-size: 22px;
+  font-family: 'Architects Daughter' , sans-serif;
+}
+
+.titulos-h3 {
+  margin-left: 70px;
+  text-decoration: underline;
+}
+
+#recado {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#section2 {
+  margin-left: 50px;
+  margin-right: 25px;
+  font-size: 22px;
+  font-family: 'Architects Daughter' , sans-serif;
+}
+
+#rodape {
+  clear: both;
+  text-align: center;
+  color: white;
+  font-family: sans-serif, cursive;
+  font-style: italic;
+  font-size: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+  background: black;
+}
+
+#sobre {
+  padding: 50px 15px;
+  border-radius: 50px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(145 , 23 , 31);
+  height: 80%;
+  margin-right: 6%;
+  margin-top: 5%;
+  float: right;
+  width: 25%;
+  max-width: 80%;
+  font-weight: 700;
+}
+
+#titulo-h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px;
+  margin-top: -15px;
+}
+
+#shows {
+  padding: 5px 15px;
+  border-radius: 50px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(145 , 23 , 31);
+  height: 80%;
+  margin-right: 6%;
+  margin-top: 5%;
+  float: right;
+  width: 25%;
+  max-width: 80%;
+}
+
+#hshows {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 19px;
+}
+
+#tabela {
+  font-family: 'Architects Daughter' , sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  background-color: rgb(185 , 107 , 112);
+}
