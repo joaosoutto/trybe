@@ -2,4 +2,6 @@
 var="Shell Script com variáveis é demais!"
 echo $var
 
-Eu sou tryber e...
+
+Eu sou tryber e... vou ter muito sucesso na programação!!!!!"
+
