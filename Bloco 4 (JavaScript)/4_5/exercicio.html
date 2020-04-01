@@ -96,25 +96,21 @@
      //8
      let listUl = document.createElement('ul');
 
-      let numbers = [
-                "Um",
-                "Dois",
-                "Três",
-                "Quatro",
-                "Cinco",
-                "Seis",
-                "Sete",
-                "Oito",
-                "Nove",
-                "Dez"
-              ];
+      let numbers = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
             divRight.appendChild(listUl);
-            for (let index = 0; index < numbers.length; index ++) {
+            for (let i = 0; i < numbers.length; i ++) {
               let listElement = document.createElement('li'); 
-              listElement.innerHTML = numbers[index]
+              listElement.innerHTML = numbers[i]
               listUl.appendChild(listElement);
             }
 
+     //9
+      let h31 = document.createElement("h3");
+      let h32 = document.createElement("h3");
+      let h33 = document.createElement("h3");
+      firstDiv.appendChild(h31);
+      firstDiv.appendChild(h32);
+      firstDiv.appendChild(h33);
       
       </script>
   </body>
