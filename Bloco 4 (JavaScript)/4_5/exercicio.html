@@ -76,16 +76,33 @@
       let paragraph1 = document.createElement("p");
       paragraph1.innerHTML = "Requsito quatro sendo cumprido com sucesso!"
       contentDiv.appendChild(paragraph1);
+     
      //5
-
       let divLeft = document.createElement("div");
       divLeft.className = "left-content";
       document.body.firstDiv.appendChild(divLeft);
+
      //6
       let divRight = document.createElement("div");
       divRight.className = "right-content";
       document.body.firstDiv.appendChild(divRight);
-      
+
+     //7
+      let firstImg = document.createElement('img');
+      firstImg.className = "small-image";
+      firstImg.src= "https://picsum.photos/200";
+      divLeft.appendChild(firstImg);
+
+     //8
+      let array = ["um", "doi", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      let list = document.createElement("ul");
+
+      for (let numeros in array) {
+        let item = document.createElement("li");
+        item.inner.HTML = array[numeros];
+        list.appendChild(item);
+      }
+      divRight.appendChild(list);
 </script>
   </body>
 </html>
