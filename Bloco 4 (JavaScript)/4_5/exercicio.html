@@ -55,7 +55,7 @@
     </style>
   </head>
   <body>
-      <h1> Olá</h1>
+  
 <script>
       let title = document.createElement("h1");
       title.innerHTML = "Exercício 4.5 - JavaScript DOM";
@@ -64,6 +64,10 @@
       let firstDiv = document.createElement('div');
       firstDiv.className = "main-content";
       document.body.appendChild(firstDiv);
+
+      let contentDiv = document.createElement('div');
+      contentDiv.className = "center-content";
+      firstDiv.appendChild(contentDiv);
 
 </script>
   </body>
