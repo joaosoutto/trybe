@@ -57,22 +57,35 @@
   <body>
   
 <script>
+     //1
       let title = document.createElement("h1");
       title.innerHTML = "Exercício 4.5 - JavaScript DOM";
       document.body.appendChild(title);
 
+     //2
       let firstDiv = document.createElement('div');
       firstDiv.className = "main-content";
       document.body.appendChild(firstDiv);
 
+     //3
       let contentDiv = document.createElement('div');
       contentDiv.className = "center-content";
       firstDiv.appendChild(contentDiv);
 
+     //4
       let paragraph1 = document.createElement("p");
       paragraph1.innerHTML = "Requsito quatro sendo cumprido com sucesso!"
       contentDiv.appendChild(paragraph1);
+     //5
 
+      let divLeft = document.createElement("div");
+      divLeft.className = "left-content";
+      document.body.firstDiv.appendChild(divLeft);
+     //6
+      let divRight = document.createElement("div");
+      divRight.className = "right-content";
+      document.body.firstDiv.appendChild(divRight);
+      
 </script>
   </body>
 </html>
