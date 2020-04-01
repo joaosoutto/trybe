@@ -80,12 +80,12 @@
      //5
       let divLeft = document.createElement("div");
       divLeft.className = "left-content";
-      document.body.firstDiv.appendChild(divLeft);
+      firstDiv.appendChild(divLeft);
 
      //6
       let divRight = document.createElement("div");
       divRight.className = "right-content";
-      document.body.firstDiv.appendChild(divRight);
+      firstDiv.appendChild(divRight);
 
      //7
       let firstImg = document.createElement('img');
@@ -94,23 +94,27 @@
       divLeft.appendChild(firstImg);
 
      //8
-      let array = ["um", "doi", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
-      let list = document.createElement("ul");
+     let listUl = document.createElement('ul');
 
-      for (let numeros in array) {
-        let item = document.createElement("li");
-        item.inner.HTML = array[numeros];
-        list.appendChild(item);
-      }
-      divRight.appendChild(list);
+      let numbers = [
+                "Um",
+                "Dois",
+                "Três",
+                "Quatro",
+                "Cinco",
+                "Seis",
+                "Sete",
+                "Oito",
+                "Nove",
+                "Dez"
+              ];
+            divRight.appendChild(listUl);
+            for (let index = 0; index < numbers.length; index ++) {
+              let listElement = document.createElement('li'); 
+              listElement.innerHTML = numbers[index]
+              listUl.appendChild(listElement);
+            }
 
-     //9
-      let h3f = document.createElement("h3");
-      let h3s = document.createElement("h3");
-      let h3t = document.createElement("h3");
-      document.body.firstDiv.appendChild(h3f);
-      document.body.firstDiv.appendChild(h3s);
-      document.body.firstDiv.appendChild(h3t);
       
       </script>
   </body>
