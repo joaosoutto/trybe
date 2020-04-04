@@ -1,0 +1,262 @@
+DIA 4.3
+
+// Gabarito dos exercícios
+​
+// Parte I - Objetos e For/In
+​
+// Exercício 1
+​
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+};
+​
+​
+//Duas formas de resolver o exercício
+console.log('Bem-vinda, '+ info.personagem);
+​
+console.log('Bem-vinda, '+ info['personagem']);
+​
+// Exercício 2
+​
+// {
+//     personagem: 'Margarida',
+//     origem: 'Pato Donald',
+//     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+//     recorrente: 'Sim'
+// };
+​
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: "Sim"
+};
+​
+console.log(info);
+​
+// Exercício 3
+​
+​
+//   personagem
+//   origem
+//   nota
+//   recorrente
+​
+​
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: "Sim"
+};
+​
+for(let properties in info){
+  console.log(properties);
+}
+​
+// Exercício 4
+​
+​
+//   Margarida
+//   Pato Donald
+//   Namorada do personagem principal nos quadrinhos do Pato Donald
+//   Sim
+​
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: "Sim",
+};
+​
+for(let properties in info){
+  console.log(info[properties]);
+}
+​
+​
+// Exercício 5
+​
+// Margarida e Tio Patinhas
+// Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
+// Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
+// Ambos recorrentes // Atenção para essa última linha!
+​
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: "Sim"
+};
+let info2 = {
+  personagem: "Tio Patinhas",
+  origem: "Christmas on Bear Mountain, Dell’s Four Color Comics #178",
+  nota: "O último MacPatinhas",
+  recorrente: "Sim"
+};
+​
+console.log(info.personagem + " e " + info2.personagem)
+console.log(info.origem + " e " + info2.origem)
+console.log(info.nota + " e " + info2.nota)
+if(info.recorrente === 'Sim' && info2.recorrente === 'Sim'){
+  console.log('Ambos recorrentes')
+}
+​
+// Parte II - Funções
+​
+​
+// Exercício 1
+​
+function verificaPalindrome(palavra) {
+  let arrayLetras = palavra.split("");
+  let isPalindrome = true;
+  for (let index in arrayLetras) {
+    if (arrayLetras[index] != palavra[(palavra.length - 1) - index]) {
+      isPalindrome = false;
+    }
+  }
+  return isPalindrome;
+}
+​
+console.log(verificaPalindrome('arara')); //true
+console.log(verificaPalindrome('desenvolvimento')); //false
+​
+​
+​
+// Exercício 2
+​
+function indiceDoMaior(numeros) {
+  let indiceMaior = 0;
+  for (let indice in numeros) {
+    if (numeros[indiceMaior] < numeros[indice]) {
+      indiceMaior = indice;
+    }
+  }
+  return indiceMaior;
+}
+​
+console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); //4
+​
+​
+​
+// Exercício 3
+​
+function indiceDoMenor(numeros) {
+  let indiceMenor = 0;
+  for (let indice in numeros) {
+    if (numeros[indiceMenor] > numeros[indice]) {
+      indiceMenor = indice;
+    }
+  }
+  return indiceMenor;
+}
+​
+console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3])); //6
+​
+​
+​
+// Exercício 4
+​
+function maiorPalavra(palavras) {
+  let maiorPalavra = palavras[0];
+  for (let indice in palavras) {
+    if (maiorPalavra.length < palavras[indice].length) {
+      maiorPalavra = palavras[indice];
+    }
+  }
+  return maiorPalavra;
+}
+​
+console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); //Fernanda
+​
+​
+​
+// Exercício 5
+​
+function maisRepetido(numeros) {
+  let contRepetido = 0;
+  let contNumero = 0;
+  let indexNumeroRepetido = 0;
+  for (let index in numeros) {
+    let verificaNumero = numeros[index];
+    for (let index2 in numeros) {
+      if (verificaNumero === numeros[index2]) {
+        contNumero++;
+      }
+    }
+    if (contNumero > contRepetido) {
+      contRepetido = contNumero;
+      indexNumeroRepetido = index;
+    }
+    contNumero = 0;
+  }
+  return numeros[indexNumeroRepetido];
+}
+​
+console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3])); //2
+​
+​
+// Exercício 6
+​
+function somaTodosNumeros(numeros) {
+  let total = 0;
+  for (let index = 1; index <= numeros; index++) {
+    total = total + index;
+  }
+  return total;
+}
+console.log(somaTodosNumeros(5)); //15
+​
+​
+​
+// Exercício 7
+​
+function verificaFimPalavra(palavra, fimPalavra) {
+  palavra = palavra.split("");
+  fimPalavra = fimPalavra.split("");
+  controle = true;
+  for (let i = 0; i < fimPalavra.length; i++) {
+    if (palavra[palavra.length-fimPalavra.length+i] != fimPalavra[i]) {
+      controle = false;
+    }
+  }
+  return controle;
+}
+​
+console.log(verificaFimPalavra("trybe", "be")); //true
+console.log(verificaFimPalavra("joaofernando", "fernan")); //false
+​
+​
+// Bônus
+​
+function Romanos(roma) {
+  let romanos = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
+​
+  let arrayNumbers = [];
+  let result = 0;
+​
+  for (let indice in roma) {
+    arrayNumbers[indice] = romanos[roma[indice]];
+  }
+​
+  for (let indice in arrayNumbers) {
+    if (arrayNumbers[indice] < arrayNumbers[indice + 1]) {
+      arrayNumbers[indice + 1] = arrayNumbers[indice + 1] - arrayNumbers[indice];
+    } else {
+      result += arrayNumbers[indice];
+    }
+  }
+​
+  return result;
+}
+​
+console.log(Romanos(MMXVIII));

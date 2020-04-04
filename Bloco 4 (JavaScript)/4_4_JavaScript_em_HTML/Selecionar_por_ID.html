@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="pageTitle">Título</h2>
+    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="secondParagraph">Segundo parágrafo!</p>
+
+    <script>
+      var paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      paragraph.innerHTML = "Lançado recentemente, esse filme já está dando o que falar!"
+
+      let subtitle = document.getElementById("subtitle");
+      subtitle.innerHTML = "A seguir, mais informações:"
+
+      let secondParagraph = document.getElementById("secondParagraph");
+      secondParagraph.style.color = "red";
+
+      let pageTitle = document.getElementById("pageTitle");
+      pageTitle.innerHTML = "O Poço - Original Netflix"
+    </script>
+  </body>
+</html>
