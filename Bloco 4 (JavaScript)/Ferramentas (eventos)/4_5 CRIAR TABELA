@@ -1,0 +1,9 @@
+        let listUl = document.createElement('ul');
+
+         let numbers = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito"];
+            divRight.appendChild(listUl);
+            for (let i = 0; i < numbers.length; i ++) {
+              let listElement = document.createElement('li'); 
+              listElement.innerHTML = numbers[i]
+              listUl.appendChild(listElement);
+            }

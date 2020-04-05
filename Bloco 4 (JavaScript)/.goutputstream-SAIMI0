@@ -1,0 +1,12 @@
+  <script>
+                    function newPicture () {
+                        document.getElementById('image').src="https://i.stack.imgur.com/zMoo4.jpg";
+                    }
+                    function oldPicture () {
+                        document.getElementById('image').src="https://i.stack.imgur.com/hOIuY.jpg";
+                    }
+
+                    
+                </script>
+
+<img src="https://i.stack.imgur.com/hOIuY.jpg" id="image" width='250' onmouseover="newPicture()" onmouseout="oldPicture()">

@@ -1,0 +1,1 @@
+ <button id="button" onclick="alert("AQUI JÁ SAI A MENSAGEM DIRETO AO CLICK DO BOTÃO!")">texto do botão.</button>
