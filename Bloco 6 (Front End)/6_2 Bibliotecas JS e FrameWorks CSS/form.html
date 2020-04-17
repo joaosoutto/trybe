@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Meu Formulário</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <center>
+    <div class="container-sm">
+        <h1 class="title is-1">== Meu Formulário ==</h1><br><br><hr>
+    </div class="container-sm">
+    </center>
+
+    <form>
+            <center>
+            <h2 class="subtitle is-1">Informações Pessoais</h2>
+            </center>
+                <div class="container-sm form-group">
+                    <label>Nome:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="40" placeholder="Digite seu nome...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Email:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="50" placeholder="Digite seu email...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>CPF:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="11" placeholder="Digite seu CPF...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Endereço:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="200" placeholder="Digite seu endereço...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Cidade:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="28" placeholder="Digite sua cidade...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Estado:</label>
+                    <select id="estado" name='estado'>
+                        <option>selecione</option>
+                </div class="container-sm form-group"><br>
+
+                <div class="container-sm form-group">
+                    <label>Tipo:</label><br>
+                    <label>
+                    <input  type="radio" required='required' name="type" value="casa">Casa</label>
+                    <label>
+                    <input  type="radio" required='required' name="type" value="apt">Apartamento</label>
+                </div class="container-sm form-group">
+    </form>
+
+
+
+
+
+
+    <form>
+        <center>
+        <h2 class="subtitle is-1">Últimas Experiências</h2>
+        </center>
+                <div class="container-sm form-group">
+                    <label>Ultimas experiências:</label><br>
+                    <textarea  class="textarea has-fixed-size" maxlength="1000" required='required' placeholder="Nos conte um pouco mais sobre suas últimas experiências..." cols="70" rows="5"></textarea>
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Cargo:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="40" placeholder="Informe seu último cargo...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Descrição do cargo:</label>
+                    <input class="input is-rounded" type="text" required='required' maxlength="500" placeholder="Fale mais sobre seu último cargo...">
+                </div class="container-sm form-group">
+
+                <div class="container-sm form-group">
+                    <label>Data de início:</label>
+                    <input type="text" id="datepicker">
+                </div class="container-sm form-group">
+                <br>
+                <center>
+                <div class="container-sm form-group">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                    <button type="submit" class="button is-danger">Cancelar</button>
+
+                </div class="container-sm form-group">
+                </center>
+    </form>
+
+    <script src="pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({ field: document.getElementById('datepicker') });
+    </script>
+</body>
+<script src="script.js"></script>
+</html>

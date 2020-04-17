@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Meu Formulário</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="titlediv">
+        <h1 class="title">== Meu Formulário ==</h1>
+    </div>
+
+    <!-----------------------------------------FIELDSET 1---------------------------------------------------------------------->
+    <div class="content1">
+        <fieldset class="field1"><legend class="legend1">Informações Pessoais</legend><br>
+            <form>
+                <div> <!--NOME------------------------------------------------------------------------------------------------------------->
+                    <label for="nome">Nome:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="nome" 
+                            id="nome" 
+                            placeholder="Digite seu nome"
+                            maxlength="40">
+                </div> <!--NOME------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--EMAIL------------------------------------------------------------------------------------------------------------->
+                    <label for="email">Email:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="email" 
+                            id="email" 
+                            placeholder="Digite seu email"
+                            maxlength="50">
+                </div> <!--EMAIL------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--CPF------------------------------------------------------------------------------------------------------------->
+                    <label for="cpf">CPF:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="cpf" 
+                            id="cpf" 
+                            placeholder="Digite seu CPF"
+                            maxlength="11">
+                </div> <!--CPF------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--ENDEREÇO------------------------------------------------------------------------------------------------------------->
+                    <label for="endereço">Endereço:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="endereço" 
+                            id="endereço" 
+                            placeholder="Digite seu endereço completo"
+                            maxlength="200">
+                </div> <!--ENDEREÇO------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--CIDADE------------------------------------------------------------------------------------------------------------->
+                    <label for="cidade">Cidade:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="cidade" 
+                            id="cidade" 
+                            placeholder="Digite sua cidade"
+                            maxlength="28">
+                </div> <!--CIDADE------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--ESTADO------------------------------------------------------------------------------------------------------------->
+                    <label for="estado">Estado:</label><br> 
+                    <select id="estado" name="estado"> 
+                        <option>SELECIONE</option> 
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                        <option value=””></option>
+                    </select> 
+                </div> <!--ESTADO------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--TIPO------------------------------------------------------------------------------------------------------------->
+                    <label for="moradia">Tipo:<br>
+                    <input type="radio" name="moradia" id="moradia" value="casa">Casa 
+                    <input type="radio" name="moradia" id="moradia" value="apt">Apartamento
+                    </label>
+                </div> <!--TIPO------------------------------------------------------------------------------------------------------------->
+            </form>
+        </fieldset>
+    </div>
+    <!-----------------------------------------FIELDSET 1---------------------------------------------------------------------->
+
+
+    <br>
+
+    <!-----------------------------------------FIELDSET 2---------------------------------------------------------------------->
+
+    <div class="content2">
+        <fieldset class="field2"><legend class="legend1">Última Experiência</legend><br>
+            <form>
+                <div> <!--NOME------------------------------------------------------------------------------------------------------------->
+                    <label for="nome">Resumo do currículo:</label><br>
+                    <textarea   name="bio"
+                                id="bio"
+                                maxlength="1000"
+                                required="required"
+                                rows="10"
+                                cols="50"
+                                placeholder="Diga mais sobre suas experiências...">
+                    </textarea>
+                </div> <!--NOME------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--CARGO------------------------------------------------------------------------------------------------------------->
+                    <label for="cargo">Último cargo:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="cargo" 
+                            id="cago" 
+                            placeholder="Seu último cargo"
+                            maxlength="40">
+                </div> <!--CARGO------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--DESCRIÇÃO DO CARGO------------------------------------------------------------------------------------------------------------->
+                    <label for="cargodesc">Descrição do cargo:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="cargodesc" 
+                            id="cargodesc" 
+                            placeholder="Sobre seu último cargo"
+                            maxlength="500">
+                </div> <!--DESCRIÇÃO DO CARGO------------------------------------------------------------------------------------------------------------->
+
+                <br>
+
+                <div> <!--DATA DE INICIO------------------------------------------------------------------------------------------------------------->
+                    <label for="data">Data de Início:</label><br>
+                    <input  type="text"
+                            required="required" 
+                            name="data" 
+                            id="data" 
+                            placeholder="Data de início"
+                            maxlength="10">
+                </div> <!--DATA DE INICIO------------------------------------------------------------------------------------------------------------->
+            </form>
+        </fieldset>
+    </div>
+    <!-----------------------------------------FIELDSET 2---------------------------------------------------------------------->
+
+</body>
+<script src="script.js"></script>
+</html>

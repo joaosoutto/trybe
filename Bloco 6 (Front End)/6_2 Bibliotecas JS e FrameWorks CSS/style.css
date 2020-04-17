@@ -1,0 +1,27 @@
+textarea {
+    resize: none;
+}
+
+html, body {
+    padding: 30px 15px;
+    margin: 15px 15px;
+    font-family: monospace;
+    background-color: gainsboro;
+}
+
+h2 {
+    text-decoration: underline;
+    margin: 15px 15px;
+}
+
+button {
+    margin: 10px;
+}
+
+h1 {
+    border: 3px dotted black;
+    padding: 25px;
+    width: 80%;
+    border-radius: 50px;
+}
+
