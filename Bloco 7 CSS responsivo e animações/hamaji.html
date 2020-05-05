@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+    <head>
+
+            <meta charset="utf-8">
+            <title>Daily Prophet</title>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+
+            <style>
+                .card-image {
+                  width: 200px;
+                }
+              ​
+                /* Estilo usados para a caixa das cartas aleatórias  */
+                .card-box{
+                  /* Usamos a propriedade grid que divide a largura da tela em 7 frações iguais */
+                  display: grid;
+                  grid-template-columns: repeat(7, 1fr);
+                }
+              ​
+                /* Animações */
+                @keyframes scale {
+                  0% {
+                    transform: scale(1);
+                  }
+                  50% {
+                    transform: scale(2);
+                  }
+                  100% {
+                    transform: scale(1);
+                  }
+                }
+              ​
+                @keyframes spin {
+                  from {
+                    transform: rotate(0);
+                  }
+                  to {
+                    transform: rotate(360deg);
+                  }
+                }
+                
+                /* Classes para atribuir as animações aleatóriamente */
+                .random-card0:hover {
+                  animation: scale 1s 0s 1 ease-in-out;
+                } 
+                .random-card1:hover {
+                  animation: spin 1s 0s 1 ease-in-out;
+                } 
+              </style>
+    </head>
+
+
+<body>
+
+      ​
+      <body>
+        <!-- Imagem do verso da carta que está funcionando como um botão para adicionar nova carta -->
+        <img src="cartas/verso-da-carta.png" class="card-button card-image" alt="">
+      ​
+        <!-- Container das cartas aleatórias -->
+        <div class="card-box">
+        </div>
+      </body>
+      ​
+      ​
+      <script>
+        // Array contendo os nomes das imagens para selecionar as cartas aleatóriamente
+        const cards = ['cinco-de-ouros.png', 
+                       'nove-de-espadas.png',
+                       'quatro-de-paus.png',
+                       'seis-de-copas.png',
+                       'sete-de-espadas.png',
+                       'sete-de-paus.png',
+                       'tres-de-ouros.png'];
+      ​
+        // Utilizamos a classe 'card-button' como hook para seleção da imagem de verso da carta
+        const button = document.querySelector('.card-button');
+        
+        // Evento que cria e insere uma carta aleatória no container das cartas
+        button.addEventListener('click', () => {
+      ​
+          // Criação de uma carta aleatória
+          const randomCard = document.createElement('img');
+      ​
+          // Adição de uma imagem para a carta
+          randomCard.src = 'cartas/' + cards[Math.floor(Math.random() * 7)];
+          
+          // Adição de classes para a atribuição de uma animação aleatória e estilização da carta
+          randomCard.classList.add('random-card' + (Math.floor(Math.random() * 2)));
+          randomCard.classList.add('card-image');
+      ​
+          // Inserção da carta no container de cartas aleatórias
+          const cardBox = document.querySelector('.card-box');
+          cardBox.appendChild(randomCard);
+      ​
+        })
+      </script>
+</body>
+</html>
