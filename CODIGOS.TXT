@@ -1,0 +1,50 @@
+// PALINDROMO 4_3 - pt2_ex1.js
+
+function verificaPalindrome(palavra) {
+    for ( let i = 0; i < palavra.length; i+=1) {
+      if (palavra[i] !== palavra[palavra.length - 1 - i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(verificaPalindrome("arara"));
+  console.log(verificaPalindrome("trybe"));
+  
+  // RETORNAR INDICE DE MAIOR VALOR EM UM ARRAY 4_3 - pt2_ex2.js
+  
+  function highestI (arr) {
+    let highestValue = arr[0];
+    let index = 0;
+    for ( let i = 0; i < arr.length; i+=1 ) {
+      if ( highestValue < arr[i]) {
+        highestValue = arr[i];
+        index = i;
+      }
+    }
+    return index;
+  }  
+  
+
+  let arrTest = [2, 3, 6, 7, 10, 1];
+  console.log(highestI(arrTest));
+  
+  // RETORNA INDICE COM MAIS CARACTERES 4_3 - pt2_ex4.js
+  
+    //função que receba um array de inteiros e retorne o inteiro que mais se repete. 4_3 - pt2_ex5.js
+    
+    //função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N. 4_3 - pt2_ex6.js
+    
+    // verifica se a ultima letra de duas palavras sao iguais 4_3 - pt2_ex7.js
+    
+    // numero primo 4_2 - numerosPrimos.js
+    
+    // fatorial 8_1 - exercise1.js
+    
+    // Crie uma função que receba uma frase e retorne qual a maior palavra. 8_1 - exercise2.js
+    
+    // botão click count 8_1 - exercise3.js
+    
+    // TIRA QUALQUER CARACTER ESPECIAL .normalize("NFD").replace(/[\u0300-\u036f]/g,'') 
+    
+    // PARA ENCONTRAR CARACTERES EM ALGUM VALOR DE ALGUMA CHAVE DE ALGUM ARRAY = 9_1 EXERCISE9.JSSSSSSSSSSSS
