@@ -48,3 +48,7 @@ function verificaPalindrome(palavra) {
     // TIRA QUALQUER CARACTER ESPECIAL .normalize("NFD").replace(/[\u0300-\u036f]/g,'') 
     
     // PARA ENCONTRAR CARACTERES EM ALGUM VALOR DE ALGUMA CHAVE DE ALGUM ARRAY = 9_1 EXERCISE9.JSSSSSSSSSSSS
+    
+    
+    POP OS
+    sudo apt install system76-driver-nvidia
