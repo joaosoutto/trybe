@@ -1,0 +1,68 @@
+body {
+  font-size: 20px;
+  margin: 10px 25px;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin-top: 5px
+}
+
+figure {
+  margim: ;
+}
+
+p {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+/*
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  50% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+
+}*/
+p {
+  animation:;
+opacity: initial;
+}
+@media (max-width: 800px) {
+    body {
+        background-color: bisque;
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    img {
+        max-width: 50%; 
+        float: left;   
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        background-color: burlywood;
+        font-size: 2rem;
+        margin: 0 auto;
+        max-width: 60%;
+    }
+}

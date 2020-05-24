@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  height: 100px;
+  border: 1px solid red;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.flex-direction__column { flex-direction: column; }
+.justify-content__space-between { justify-content: space-between; }
+.justify-content__center { justify-content: center; }
+.align-items__flex-start { align-items: flex-start; }
+.automatic-box-height { height: auto; }
+.ball { border-radius: 100%; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.black { background-color: black; }
+.medium {
+  width: 50px;
+  height: 50px;
+}
+
+/*EXERCICIO 1 **********************************/
+#exercise-1 {
+    animation-name: one;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+@keyframes one {
+    from {margin-left: 0%;}
+    to {margin-left: 1600px;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 2 **********************************/
+#exercise-2 {
+    animation-name: two;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes two {
+    from {margin-left: 0%;}
+    to {margin-left: 1600px;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 3 **********************************/
+#exercise-3 {
+    animation-name: three;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+@keyframes three {
+    0% {margin-left: 0%;}
+    50% {margin-left: 1600px;}
+    100% {margin-left: 0%;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 4 **********************************/
+#exercise-4:hover {
+    animation-name: four;
+    animation-duration: 5s;
+}
+@keyframes four {
+    from {margin-left: 0%;}
+    to {margin-left: 1600px;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 5 **********************************/
+#section-5:hover :first-child {
+    animation-name: five;
+    animation-duration: 5s;
+}
+@keyframes five {
+    from {margin-left: 0%;}
+    to {margin-left: 1600px;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 6 **********************************/
+#exercise-6-square:hover :nth-of-type(2) {
+    animation-name: one;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+@keyframes one {
+    from {margin-left: 1600px;}
+    to {margin-left: 0px;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 7 **********************************/
+#exercise-7 {
+    animation-name: seven;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes seven {
+    0% {width: ;}
+    50% {width: 100%;}
+    100% {width: ;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 8 **********************************/
+#exercise-8 {
+    animation-name: eight;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes eight {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: red;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 9 **********************************/
+#exercise-9 {
+    animation-name: nine;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes nine {
+    0% {background-color: red;}
+    30% {background-color: yellow;}
+    60% {background-color: blue;}
+    85% {background-color: green;}
+}
+/*************************************************/
+
+
+
+/*EXERCICIO 1 **********************************/
+#exercise-10 {
+    animation-name: teen;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes teen {
+    0% {width: ;
+        background-color: red;}
+    25% {width: 25%;
+        background-color: yellow;}
+    50% {width: 50%;
+        background-color: blue;}
+    75% {width: 75%;
+        background-color: green;}
+    100% {width: 100% ;
+        background-color: red;}
+
+}
+/*************************************************/
+
+
+
+
+
+/*EXERCICIO 12 **********************************/
+#exercise-12::selection  {
+    animation-name: twelve;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes twelve {
+from {opacity: 1;}
+to {opacity: 0;}
+}
+/*************************************************/
