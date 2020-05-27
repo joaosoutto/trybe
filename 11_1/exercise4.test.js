@@ -11,6 +11,4 @@ const getRepos = (url) => {
       return data.map((repo) => repo.name)
     });
 }
-    
-// testes aqui:
 
