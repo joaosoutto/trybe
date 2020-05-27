@@ -7,10 +7,11 @@
 const fetch = require('node-fetch');
 const API_URL = 'https://dog.ceo/api/breeds/image/random';
 
-const fetchDog = () => (
-  fetch(API_URL)
-    .then((response) => response.json())
-    .then((data) => data.dog)
-);
+let fetchDog = async()=>{
+  const resp = await fetch(API_URL);
+  const json = await resp.json()
+  
+  return json;
+}
 
 module.exports = fetchDog;
