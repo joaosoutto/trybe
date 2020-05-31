@@ -1,0 +1,41 @@
+
+.App {
+    background-color: rgb(200,200,200);
+    width: 80%;
+}
+
+.pokemonEDiv {
+    background-color: wheat;
+    border: 3px solid rgb(10,10,10);
+    border-radius: 50px;
+    width: 250px;
+    flex: 1;
+    flex-basis: 25%;
+    margin: 20px;
+}
+
+.pokemonDiv {
+border: 3px groove rgb(10,10,10);
+
+border-radius: 30px;
+padding: 10px;
+background-color: rgb(243, 31, 31);
+opacity: 0.9;
+color: rgb(10,10,10);
+margin: 30px auto;
+width: 60%;
+text-align: center;
+display: flex;
+flex-flow: row wrap;
+
+}
+
+.pokemonImg {
+    width: 100px;
+}
+
+.pokemonP {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    font-family: monospace;
+}
