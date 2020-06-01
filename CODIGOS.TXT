@@ -1,5 +1,18 @@
-// PALINDROMO 4_3 - pt2_ex1.js
+npm:
 
+criar o package.json
+install npm --save-dev jest
+criar .gitignore e adicionar /node_modules 
+
+
+sudo npm uninstall -g jest
+sudo npm uninstall --save-dev jest 
+
+
+
+
+
+// PALINDROMO 4_3 - pt2_ex1.js
 function verificaPalindrome(palavra) {
     for ( let i = 0; i < palavra.length; i+=1) {
       if (palavra[i] !== palavra[palavra.length - 1 - i]) {
